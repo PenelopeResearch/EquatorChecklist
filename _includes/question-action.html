@@ -1,0 +1,20 @@
+<div class='row'>
+  <div class='col-xs-6'>
+    <a href='{{include.yesResult}}.html' class='btn btn-default'>Yes</a>
+  </div>
+  <div class='col-xs-6'>
+    <a href='{{include.noResult}}.html' class='btn btn-default'>No</a>
+  </div>
+</div>
+<div class='row'>
+  <div class='col-xs-6'>
+    {% if include.prevResult %}
+      <a href='{{include.prevResult}}.html' class='btn btn-default'>Back</a>
+    {% else %}
+      <a class='btn btn-default disabled'>Back</a>
+    {% endif %}
+  </div>
+  <div class='col-xs-6'>
+    <a href='equatorNew.html' class='btn btn-default'>Restart</a>
+  </div>
+</div>
