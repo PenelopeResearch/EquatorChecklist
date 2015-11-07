@@ -2,8 +2,8 @@
 title: Penelope
 email: james@peneloperesearch.com
 description: EQUATOR network guidelines finder
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://peneloperesearch.github.io/EquatorChecklist" # the base hostname & protocol for your site
+baseurl: "/EquatorChecklist/" # the subpath of your site, e.g. /blog/
+url: "http://peneloperesearch.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
