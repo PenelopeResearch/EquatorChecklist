@@ -5,8 +5,8 @@
 <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-<link rel="stylesheet" href="/css/offcanvas.css">
-<link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/{{site.baseurl}}/css/offcanvas.css">
+<link rel="stylesheet" href="/{{site.baseurl}}/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="{{ "/css/equator.css" | prepend: site.baseurl }}">
@@ -15,4 +15,4 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:600,600italic,700normal,700italic,100,400,500,500italic,200,700,400italic,300,300italic">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-<script src="/js/jquery-2.1.0.min.js"></script>
+<script src="/{{site.baseurl}}/js/jquery-2.1.0.min.js"></script>
