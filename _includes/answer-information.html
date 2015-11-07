@@ -1,21 +1,28 @@
 <div class='container'>
   <div class='row'>
     <div class='col-xs-3'>
-      <a href='{{include.checkListLink}}' class='btn btn-info'>Download Checklist</a>
+      <a href='{{include.checkListLink}}' class='btn btn-info' target="_blank">Download Checklist</a>
     </div>
     <div class='col-xs-9'>
-      <p>This checklist sets out the important things readers need to know about your work. It's based on the <a href='{{include.checkListLink}}'>{{include.checkList}} guidelines</a> which have been developed by experts in the reporting of systematic reviews.</p>
+      <p>This checklist sets out the important things readers need to know about your work. It's based on the <a href='{{include.checkListLink}}' target="_blank">{{include.checkList}} guidelines</a> which have been developed by experts in the reporting of systematic reviews.</p>
     </div>
   </div>
   <p>
     If you find you've forgotten to report an item on the checklist, make sure you add it to your manuscript (or explain why it can't be added) before you submit. Failing to do so may prevent others from publishing, citing or replicating your work.
   </p>
+  {% if include.additional %}
+    <p>{{include.additional}}</p>
+  {% endif %}
   <div class='row'>
     <div class='col-xs-3'>
-      <a href='{{include.moreInfoLink}}'>More info</a>
+      {% if include.moreInfoLink %}
+        <a href='{{include.moreInfoLink}}' target="_blank">More info</a>
+      {% endif %}
     </div>
     <div class='col-xs-9'>
-      <a href='{{include.extensionsLink}}'>Search for useful extensions</a>
+      {% if include.extensionsLink %}
+        <a href='{{include.extensionsLink}}' target="_blank">Search for useful extensions</a>
+      {% endif %}
     </div>
   </div>
 </div>
